@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class Category {
+public class Category{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
