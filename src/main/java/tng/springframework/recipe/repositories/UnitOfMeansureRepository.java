@@ -2,8 +2,8 @@ package tng.springframework.recipe.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import tng.springframework.recipe.domain.UnitOfMeansure;
+import tng.springframework.recipe.domain.UnitOfMeasure;
 
-public interface UnitOfMeansureRepository extends CrudRepository<UnitOfMeansure, Long>{
+public interface UnitOfMeansureRepository extends CrudRepository<UnitOfMeasure, Long>{
 
 }

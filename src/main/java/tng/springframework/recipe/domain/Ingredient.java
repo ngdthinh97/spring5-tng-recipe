@@ -26,13 +26,13 @@ public class Ingredient {
 	private Recipe recipe;
 	
 	@OneToOne(fetch = FetchType.EAGER)
-	private UnitOfMeansure uom;
+	private UnitOfMeasure uom;
 	
-	public UnitOfMeansure getUom() {
+	public UnitOfMeasure getUom() {
 		return uom;
 	}
 
-	public void setUom(UnitOfMeansure uom) {
+	public void setUom(UnitOfMeasure uom) {
 		this.uom = uom;
 	}
 
