@@ -3,15 +3,14 @@ package tng.springframework.recipe.services;
 
 import org.springframework.stereotype.Service;
 
+import lombok.extern.slf4j.Slf4j;
 import tng.springframework.recipe.domain.Recipe;
 import tng.springframework.recipe.repositories.RecipeRepository;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jt on 6/13/17.
- */
+@Slf4j
 @Service
 public class RecipeServiceImpl implements RecipeService {
 
@@ -23,6 +22,7 @@ public class RecipeServiceImpl implements RecipeService {
 
     @Override
     public Set<Recipe> getRecipes() {
+    	log.debug("i am from service");
         Set<Recipe> recipeSet = new HashSet<>();
         recipeRepository.findAll().iterator().forEachRemaining(recipeSet::add);
         return recipeSet;

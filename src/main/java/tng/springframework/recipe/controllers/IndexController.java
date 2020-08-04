@@ -26,12 +26,12 @@ public class IndexController {
 		this.unitOfMeasureRepository = unitOfMeasureRepository;
 		this.recipeRepository = recipeRepository;
 	}
-
+	
 	@RequestMapping({"","/","index","index.html"})
 	public String getIndexPage(Model model) {
 		
 		model.addAttribute("recipes", recipeRepository.findAll());
-
+		
 		return "index";
 	}
 }
