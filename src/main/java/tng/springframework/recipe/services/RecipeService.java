@@ -12,4 +12,6 @@ import tng.springframework.recipe.domain.Recipe;
 public interface RecipeService {
 
     Set<Recipe> getRecipes();
+    
+    Recipe findById(Long l);
 }
