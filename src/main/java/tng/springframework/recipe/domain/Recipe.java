@@ -1,6 +1,6 @@
 package tng.springframework.recipe.domain;
 
-import java.util.HashSet; 
+import java.util.HashSet;  
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -17,9 +17,11 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @Entity // this is going to create this class like a Entity
 public class Recipe {
 	
